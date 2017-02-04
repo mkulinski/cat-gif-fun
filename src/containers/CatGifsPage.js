@@ -11,7 +11,7 @@ const CatGifsPage = ({ catGifs, actions }) => {
       <h1>Cat Gif Page</h1>
       <Gif url={catGifs.currUrl} />
       <button onClick={actions.grabGifUrl}>
-        New Giphy
+        New Giphy!
       </button>
     </div>
   );
