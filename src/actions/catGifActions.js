@@ -9,7 +9,7 @@ export function grabGifUrl(url) {
   };
 }
 
-// export function handleClick(oldUrl) {
+// export function checkIfInPlayedUrls(oldUrl) {
 //   return {
 //     type: types.
 //   }

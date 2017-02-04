@@ -8,7 +8,8 @@ export default function addGifs(state = initialState.catGifs, action) {
   switch (action.type) {
     case ADD_GIF:
       const currUrl = action.payload;
-      return objectAssign({}, state, { currUrl });
+      const playedUrls = state.playedUrls.push(state.currUrl);
+      return objectAssign({}, state, { currUrl, playedUrls });
 
     default:
       return state;
