@@ -6,6 +6,9 @@ import { Link, IndexLink } from 'react-router';
 
 
 class App extends React.Component {
+  componentWillMount() {
+    this.props.actions.grabGifUrl();
+  }
   render() {
     return (
       <div>

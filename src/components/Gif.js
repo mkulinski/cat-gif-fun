@@ -4,7 +4,7 @@ import '../styles/about-page.scss';
 
 const Gif = ({ url }) => {
   return (
-    <img src={url} />
+    <img src={`http://i.giphy.com/${url}.gif`} />
   );
 };
 

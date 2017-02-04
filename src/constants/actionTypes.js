@@ -1,2 +1,2 @@
-export const ADD_GIF = 'ADD_GIF';
-export const CHECK_IF_PLAYED = 'ADD_GIF';
+export const ADD_GIFS = 'ADD_GIFS';
+export const NEW_CURR_URL = 'NEW_CURR_URL';
