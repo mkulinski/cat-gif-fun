@@ -1,24 +1,16 @@
 import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as actions from '../actions/catGifActions';
 import Gif from '../components/Gif';
 
 
-const CatGifsPage = (props) => {
-  // console.log(props);
-  const { catGifs, actions } = props;
-  const handleClick = () => {
-    // check if cachedUrls.length < 1
-      // if it is run action.grabGifUrl
-      actions.grabGifUrl();
-      // else just grab the last str in cachedUrls
-      // and make it currUrl
-    console.log('clicked');
-  };
-
+const CatGifsPage = ({ catGifs, actions }) => {
   return (
     <div>
       <h1>Cat Gif Page</h1>
       <Gif url={catGifs.currUrl} />
-      <button onClick={handleClick}>
+      <button onClick={actions.grabGifUrl}>
         New Giphy
       </button>
     </div>
@@ -27,6 +19,22 @@ const CatGifsPage = (props) => {
 
 CatGifsPage.propTypes = {
   catGifs: PropTypes.object.isRequired,
+  actions: PropTypes.object.isRequired,
 };
 
-export default CatGifsPage;
+function mapStateToProps(state) {
+  return {
+    catGifs: state.catGifs
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(actions, dispatch)
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CatGifsPage);

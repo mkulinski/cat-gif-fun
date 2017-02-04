@@ -17,9 +17,6 @@ export default function addGifs(state = initialState.catGifs, action) {
       const cachedUrls = state.cachedUrls.slice(0, -1);
       const currUrl = state.cachedUrls[state.cachedUrls.length - 1];
       const playedUrls = state.playedUrls.concat(state.currUrl);
-      console.log(cachedUrls)
-      console.log(currUrl)
-      console.log(playedUrls)
       return Object.assign({}, state, {
         playedUrls,
         currUrl,
