@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import catGifReducer from './catGifReducer';
-import {routerReducer} from 'react-router-redux';
+import { routerReducer } from 'react-router-redux';
 
 const rootReducer = combineReducers({
-  catGifReducer,
+  catGifs: catGifReducer,
   routing: routerReducer
 });
 

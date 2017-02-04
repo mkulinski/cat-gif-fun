@@ -1,33 +1,15 @@
-import React, {PropTypes} from 'react';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import * as actions from '../actions/catGifActions';
+import React, { PropTypes } from 'react';
 // import FuelSavingsForm from '../components/Gifscomponent';
 
 export const CatGifsPage = (props) => {
+  console.log(props);
   return (
-    <div>Cat Gif</div>
+    <div>Cat Gif Page</div>
   );
 };
 
 CatGifsPage.propTypes = {
-  actions: PropTypes.object.isRequired,
-  catGifs: PropTypes.object.isRequired
+  
 };
 
-function mapStateToProps(state) {
-  return {
-    catGifs: state.catGifs
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(actions, dispatch)
-  };
-}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(CatGifsPage);
+export default CatGifsPage;

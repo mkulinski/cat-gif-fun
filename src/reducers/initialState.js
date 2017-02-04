@@ -1,5 +1,10 @@
 export default {
   catGifs: {
-    imgUrls: ['http://i.giphy.com/ooZv8VlxPGUQ8.gif'],
+    imgUrls: [
+      {
+        url: 'http://i.giphy.com/ooZv8VlxPGUQ8.gif',
+        watched: false,
+      },
+    ],
   },
 };
