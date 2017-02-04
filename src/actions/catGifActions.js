@@ -9,6 +9,12 @@ export function grabGifUrl(url) {
   };
 }
 
+// export function handleClick(oldUrl) {
+//   return {
+//     type: types.
+//   }
+// }
+
 // export function calculateFuelSavings(settings, fieldName, value) {
 //   return {
 //     type: types.CALCULATE_FUEL_SAVINGS,

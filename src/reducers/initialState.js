@@ -1,10 +1,6 @@
 export default {
   catGifs: {
-    imgUrls: [
-      {
-        url: 'http://i.giphy.com/ooZv8VlxPGUQ8.gif',
-        watched: false,
-      },
-    ],
+    currUrl: 'http://i.giphy.com/3oEduLSwuxfMoTbMQg.gif',
+    playedUrls: ['http://i.giphy.com/ooZv8VlxPGUQ8.gif'],
   },
 };

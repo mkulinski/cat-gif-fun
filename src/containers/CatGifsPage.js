@@ -7,7 +7,7 @@ export const CatGifsPage = (props) => {
   return (
     <div>
       <h1>Cat Gif Page</h1>
-      <Gif url={props.catGifs.imgUrls[0].url} />
+      <Gif url={props.catGifs.currUrl} />
     </div>
   );
 };

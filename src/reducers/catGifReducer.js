@@ -7,8 +7,8 @@ export default function addGifs(state = initialState.catGifs, action) {
 
   switch (action.type) {
     case ADD_GIF:
-      const imgUrls = state.imgUrls.push(action.payload);
-      return objectAssign({}, state, { imgUrls });
+      const currUrl = action.payload;
+      return objectAssign({}, state, { currUrl });
 
     default:
       return state;
