@@ -15,7 +15,7 @@ function configureStoreProd(initialState) {
   );
 }
 
-function configureStoreDev(initialState) {
+function configureStoreDev() {
   const middlewares = [
     // Redux middleware that spits an error on you when you try to mutate your state either inside a dispatch or between dispatches.
     reduxImmutableStateInvariant(),
