@@ -6,9 +6,11 @@ import Nav from '../components/Nav';
 
 
 class App extends React.Component {
+
   componentWillMount() {
     this.props.actions.grabGifUrl();
   }
+
   render() {
     return (
       <div>
