@@ -1,26 +1,27 @@
-/* Variables */
-$vin-blue: #5bb7db;
-$vin-green: #60b044;
-$vin-red: #ff0000;
+@import './variables';
 
-/* Styles */
+/* Global Styles */
+* {
+  box-sizing:  border-box;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
-  color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
-  margin: 0 auto;
+  color: $medium-grey;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 td {
 	padding: 12px;
 }
 
-h2 {
-	color: $vin-blue;
+h1, h2, h3, h4, h5 {
+  color: $light-blue;
+  font-weight: 800;
 }

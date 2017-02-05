@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../actions/catGifActions';
-import { Link, IndexLink } from 'react-router';
+import Nav from '../components/Nav';
 
 
 class App extends React.Component {
@@ -12,12 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <IndexLink to="/">Home</IndexLink>
-        {' | '}
-        <Link to="/cat-gifs">Cat GIFs</Link>
-        {' | '}
-        <Link to="/about">About</Link>
-        <br/>
+        <Nav />
         {this.props.children}
       </div>
     );
