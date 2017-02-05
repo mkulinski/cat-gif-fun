@@ -5,7 +5,7 @@ import '../styles/about-page.scss';
 const AboutPage = () => {
   return (
     <div className="component-container">
-      <h2 className="alt-header">About</h2>
+      <h1>About</h1>
       <p>
         This was done for Bob and his love of cats
       </p>

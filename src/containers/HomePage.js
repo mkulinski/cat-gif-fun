@@ -1,10 +1,13 @@
 import React from 'react';
+import '../styles/home-page.scss';
 
 
 const HomePage = () => {
   return (
-    <div className="component-container">
-      <h1>Cat GIFs</h1>
+    <div className="home">
+      <div className="home-container">
+        <h1>Your Home For Never Ending Cat GIFs</h1>
+      </div>
     </div>
   );
 };

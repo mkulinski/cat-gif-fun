@@ -28,12 +28,6 @@
   a:hover {
     background-color: $light-blue;
   }
-
-  a.active {
-    background-color: #fff;
-    color: $medium-grey;
-    cursor: default;
-  }
 }
 
 @media screen and (min-width: 735px) {

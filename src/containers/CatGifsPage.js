@@ -9,7 +9,7 @@ import '../styles/cat-gifs-page.scss';
 const CatGifsPage = ({ catGifs, actions }) => {
   return (
     <div className="component-container">
-      <h1>Cat Gif Page</h1>
+      <h1>All The Cat GIFs You Can Handle</h1>
       <Gif url={catGifs.currUrl} className="gif" />
       <button onClick={actions.grabGifUrl}>
         New Giphy!
