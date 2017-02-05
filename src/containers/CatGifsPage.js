@@ -3,13 +3,14 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../actions/catGifActions';
 import Gif from '../components/Gif';
+import '../styles/cat-gifs-page.scss';
 
 
 const CatGifsPage = ({ catGifs, actions }) => {
   return (
-    <div>
+    <div className="component-container">
       <h1>Cat Gif Page</h1>
-      <Gif url={catGifs.currUrl} />
+      <Gif url={catGifs.currUrl} className="gif" />
       <button onClick={actions.grabGifUrl}>
         New Giphy!
       </button>
